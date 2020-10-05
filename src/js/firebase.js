@@ -1,4 +1,5 @@
 const firebaseConfig = {
+	// вставляете свои данные 
 	apiKey: "",
 	authDomain: "",
 	databaseURL: "",
