@@ -59,7 +59,7 @@ function addTask() {
 }
 addTask();
 
-function liRemove() {
+function removeLis() {
 	let lis = document.querySelectorAll('li');
 	for (let li of lis) {
 		li.remove();
@@ -68,7 +68,7 @@ function liRemove() {
 
 function addTodoList() {
 	task.onSnapshot(datas => {
-		liRemove();
+		removeLis();
 		datas.forEach(data => {
 			addLiInUl(data.data().title, data.id);
 		})
